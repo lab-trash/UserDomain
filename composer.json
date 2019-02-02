@@ -10,7 +10,9 @@
         }
     ],
     "require": {
-        "blacksmith-project/strong-types": "^0.1"
+        "blacksmith-project/strong-types": "^0.1",
+        "blacksmith-project/command-bus": "^0.2.1",
+        "blacksmith-project/event-bus": "^0.2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.3",
