@@ -7,8 +7,6 @@ use BSP\Action\Registration\RegisterUser;
 use BSP\Action\Registration\RegisterUserHandler;
 use BSP\Port\IReadUser;
 use BSP\Port\IWriteUser;
-use BSP\Types\Identity;
-use BSP\ValueObject\UserId;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 

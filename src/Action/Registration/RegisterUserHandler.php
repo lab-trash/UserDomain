@@ -6,6 +6,7 @@ namespace BSP\Action\Registration;
 use BSP\CommandBus\Command;
 use BSP\CommandBus\CommandHandler;
 use BSP\Entity\User;
+use BSP\Factory\UserFactory;
 use BSP\Port\IReadUser;
 use BSP\Port\IWriteUser;
 use BSP\Service\PasswordEncoder;
@@ -34,7 +35,7 @@ final class RegisterUserHandler implements CommandHandler
         }
 
         $user = new User(
-            new UserId(Identity::generate()),
+            UserFactory::generateUserId(),
             $command->email(),
             PasswordEncoder::hash($command->plainPassword())
         );
