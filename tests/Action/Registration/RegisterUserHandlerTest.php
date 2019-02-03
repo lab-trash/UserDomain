@@ -5,6 +5,8 @@ namespace BSP\Tests\Action\Registration;
 
 use BSP\Action\Registration\RegisterUser;
 use BSP\Action\Registration\RegisterUserHandler;
+use BSP\Bus\UserEventBus;
+use BSP\Port\IDispatchEvent;
 use BSP\Port\IReadUser;
 use BSP\Port\IWriteUser;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -18,6 +20,8 @@ final class RegisterUserHandlerTest extends TestCase
         $iReadUser = $this->createMock(IReadUser::class);
         /** @var IWriteUser|MockObject $iWriteUser */
         $iWriteUser = $this->createMock(IWriteUser::class);
+        /** @var IDispatchEvent|MockObject $iDispatchEvent */
+        $iDispatchEvent = $this->createMock(IDispatchEvent::class);
 
         $iReadUser->method('isEmailAvailable')->willReturn(true);
 
@@ -29,7 +33,7 @@ final class RegisterUserHandlerTest extends TestCase
             ->expects($this->once())
             ->method('add');
 
-        $registerUserHandler = new RegisterUserHandler($iReadUser, $iWriteUser);
+        $registerUserHandler = new RegisterUserHandler($iReadUser, $iWriteUser, new UserEventBus($iDispatchEvent));
 
         $registerUser = new RegisterUser('john.snow@winterfell.com', 'winterIsComing');
 
