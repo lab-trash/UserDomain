@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace BSP\Action\Registration;
 
+use BSP\Bus\UserEventBus;
 use BSP\CommandBus\Command;
 use BSP\CommandBus\CommandHandler;
 use BSP\Entity\User;
@@ -10,18 +11,18 @@ use BSP\Factory\UserFactory;
 use BSP\Port\IReadUser;
 use BSP\Port\IWriteUser;
 use BSP\Service\PasswordEncoder;
-use BSP\Types\Identity;
-use BSP\ValueObject\UserId;
 
 final class RegisterUserHandler implements CommandHandler
 {
     private $iReadUser;
     private $iWriteUser;
+    private $eventBus;
 
-    public function __construct(IReadUser $iReadUser, IWriteUser $iWriteUser)
+    public function __construct(IReadUser $iReadUser, IWriteUser $iWriteUser, UserEventBus $eventBus)
     {
         $this->iReadUser = $iReadUser;
         $this->iWriteUser = $iWriteUser;
+        $this->eventBus = $eventBus;
     }
 
     /**
@@ -41,5 +42,6 @@ final class RegisterUserHandler implements CommandHandler
         );
 
         $this->iWriteUser->add($user);
+        $this->eventBus->send(new UserRegistered($user));
     }
 }
