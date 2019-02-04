@@ -7,6 +7,14 @@
 
 ### New features
 
+### Bugfixes
+
+</details>
+
+## v0.1.0
+
+### New features
+
 - add Registration
     + Command: `\BSP\UserDomain\Action\Registration\RegisterUser`
     + Handler: `\BSP\UserDomain\Action\Registration\RegisterUserHandler`
@@ -19,7 +27,3 @@
     + Command: `\BSP\UserDomain\Action\PasswordUpdate\UpdatePassword`
     + Handler: `\BSP\UserDomain\Action\PasswordUpdate\UpdatePasswordHandler`
     + Event: `\BSP\UserDomain\Action\PasswordUpdate\PasswordUpdated`
-
-### Bugfixes
-
-</details>
