@@ -14,4 +14,6 @@ a User system.
 
 ## Installation
 
+`composer require blacksmith-project/user-domain`
+
 ## How to use it ?
