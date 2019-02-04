@@ -44,4 +44,9 @@ final class Token
     {
         return $this->expireAt;
     }
+
+    public function isExpired(): bool
+    {
+        return $this->expireAt < new \DateTimeImmutable();
+    }
 }

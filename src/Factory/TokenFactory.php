@@ -27,7 +27,7 @@ final class TokenFactory
         return new TokenId($identity);
     }
 
-    public static function tokenValue(string $tokenValue): TokenValue
+    public static function tokenValue(?string $tokenValue): TokenValue
     {
         return new TokenValue(new BasicString($tokenValue));
     }
