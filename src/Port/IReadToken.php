@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Port;
+namespace BSP\UserDomain\Port;
 
-use BSP\Entity\Token;
-use BSP\ValueObject\TokenValue;
+use BSP\UserDomain\Entity\Token;
+use BSP\UserDomain\ValueObject\TokenValue;
 
 interface IReadToken
 {

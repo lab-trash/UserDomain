@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\ValueObject;
+namespace BSP\UserDomain\Tests\ValueObject;
 
 use BSP\Types\Identity;
-use BSP\ValueObject\UserId;
+use BSP\UserDomain\ValueObject\UserId;
 use PHPUnit\Framework\TestCase;
 
 final class UserIdTest extends TestCase

@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Action\ForgottenPasswordDeclaration;
+namespace BSP\UserDomain\Tests\Action\ForgottenPasswordDeclaration;
 
-use BSP\Action\ForgottenPasswordDeclaration\DeclareForgottenPassword;
-use BSP\Action\ForgottenPasswordDeclaration\DeclareForgottenPasswordHandler;
-use BSP\Bus\UserEventBus;
-use BSP\Entity\User;
-use BSP\Factory\UserFactory;
-use BSP\Port\IDispatchEvent;
-use BSP\Port\IReadUser;
-use BSP\Port\IWriteToken;
+use BSP\UserDomain\Action\ForgottenPasswordDeclaration\DeclareForgottenPassword;
+use BSP\UserDomain\Action\ForgottenPasswordDeclaration\DeclareForgottenPasswordHandler;
+use BSP\UserDomain\Bus\UserEventBus;
+use BSP\UserDomain\Entity\User;
+use BSP\UserDomain\Factory\UserFactory;
+use BSP\UserDomain\Port\IDispatchEvent;
+use BSP\UserDomain\Port\IReadUser;
+use BSP\UserDomain\Port\IWriteToken;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 

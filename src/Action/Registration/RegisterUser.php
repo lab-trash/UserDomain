@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Action\Registration;
+namespace BSP\UserDomain\Action\Registration;
 
 use BSP\CommandBus\Command;
-use BSP\Factory\UserFactory;
-use BSP\ValueObject\Email;
-use BSP\ValueObject\PlainPassword;
+use BSP\UserDomain\Factory\UserFactory;
+use BSP\UserDomain\ValueObject\Email;
+use BSP\UserDomain\ValueObject\PlainPassword;
 
 final class RegisterUser implements Command
 {

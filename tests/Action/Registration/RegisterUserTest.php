@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Action\Registration;
+namespace BSP\UserDomain\Tests\Action\Registration;
 
-use BSP\Action\Registration\RegisterUser;
-use BSP\ValueObject\Email;
-use BSP\ValueObject\PlainPassword;
+use BSP\UserDomain\Action\Registration\RegisterUser;
+use BSP\UserDomain\ValueObject\Email;
+use BSP\UserDomain\ValueObject\PlainPassword;
 use PHPUnit\Framework\TestCase;
 
 final class RegisterUserTest extends TestCase

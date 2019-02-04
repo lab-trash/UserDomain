@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Factory;
+namespace BSP\UserDomain\Tests\Factory;
 
-use BSP\Entity\Token;
-use BSP\Entity\User;
-use BSP\Factory\TokenFactory;
-use BSP\Factory\UserFactory;
+use BSP\UserDomain\Entity\Token;
+use BSP\UserDomain\Entity\User;
+use BSP\UserDomain\Factory\TokenFactory;
+use BSP\UserDomain\Factory\UserFactory;
 use BSP\Types\Identity;
-use BSP\ValueObject\TokenId;
-use BSP\ValueObject\TokenValue;
+use BSP\UserDomain\ValueObject\TokenId;
+use BSP\UserDomain\ValueObject\TokenValue;
 use PHPUnit\Framework\TestCase;
 
 final class TokenFactoryTest extends TestCase

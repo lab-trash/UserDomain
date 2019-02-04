@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Bus;
+namespace BSP\UserDomain\Bus;
 
-use BSP\Action\ForgottenPasswordDeclaration\ForgottenPasswordDeclared;
-use BSP\Action\PasswordUpdate\PasswordUpdated;
-use BSP\Action\Registration\UserRegistered;
+use BSP\UserDomain\Action\ForgottenPasswordDeclaration\ForgottenPasswordDeclared;
+use BSP\UserDomain\Action\PasswordUpdate\PasswordUpdated;
+use BSP\UserDomain\Action\Registration\UserRegistered;
 use BSP\EventBus\EventBus;
-use BSP\Port\IDispatchEvent;
+use BSP\UserDomain\Port\IDispatchEvent;
 
 final class UserEventBus extends EventBus
 {

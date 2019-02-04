@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Bus;
+namespace BSP\UserDomain\Bus;
 
-use BSP\Action\ForgottenPasswordDeclaration\DeclareForgottenPassword;
-use BSP\Action\ForgottenPasswordDeclaration\DeclareForgottenPasswordHandler;
-use BSP\Action\PasswordUpdate\UpdatePassword;
-use BSP\Action\PasswordUpdate\UpdatePasswordHandler;
-use BSP\Action\Registration\RegisterUser;
-use BSP\Action\Registration\RegisterUserHandler;
+use BSP\UserDomain\Action\ForgottenPasswordDeclaration\DeclareForgottenPassword;
+use BSP\UserDomain\Action\ForgottenPasswordDeclaration\DeclareForgottenPasswordHandler;
+use BSP\UserDomain\Action\PasswordUpdate\UpdatePassword;
+use BSP\UserDomain\Action\PasswordUpdate\UpdatePasswordHandler;
+use BSP\UserDomain\Action\Registration\RegisterUser;
+use BSP\UserDomain\Action\Registration\RegisterUserHandler;
 use BSP\CommandBus\CommandBus;
 
 final class UserCommandBus extends CommandBus

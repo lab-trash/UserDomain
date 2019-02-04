@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Action\PasswordUpdate;
+namespace BSP\UserDomain\Action\PasswordUpdate;
 
 use BSP\CommandBus\Command;
-use BSP\Factory\TokenFactory;
-use BSP\Factory\UserFactory;
-use BSP\ValueObject\PlainPassword;
-use BSP\ValueObject\TokenValue;
+use BSP\UserDomain\Factory\TokenFactory;
+use BSP\UserDomain\Factory\UserFactory;
+use BSP\UserDomain\ValueObject\PlainPassword;
+use BSP\UserDomain\ValueObject\TokenValue;
 
 final class UpdatePassword implements Command
 {

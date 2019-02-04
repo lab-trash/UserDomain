@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Action\Registration;
+namespace BSP\UserDomain\Tests\Action\Registration;
 
-use BSP\Action\Registration\RegisterUser;
-use BSP\Action\Registration\RegisterUserHandler;
-use BSP\Bus\UserEventBus;
-use BSP\Port\IDispatchEvent;
-use BSP\Port\IReadUser;
-use BSP\Port\IWriteUser;
+use BSP\UserDomain\Action\Registration\RegisterUser;
+use BSP\UserDomain\Action\Registration\RegisterUserHandler;
+use BSP\UserDomain\Bus\UserEventBus;
+use BSP\UserDomain\Port\IDispatchEvent;
+use BSP\UserDomain\Port\IReadUser;
+use BSP\UserDomain\Port\IWriteUser;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 

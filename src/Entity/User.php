@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Entity;
+namespace BSP\UserDomain\Entity;
 
-use BSP\ValueObject\Email;
-use BSP\ValueObject\EncodedPassword;
-use BSP\ValueObject\UserId;
+use BSP\UserDomain\ValueObject\Email;
+use BSP\UserDomain\ValueObject\EncodedPassword;
+use BSP\UserDomain\ValueObject\UserId;
 
 final class User
 {

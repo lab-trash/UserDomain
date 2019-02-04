@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\ValueObject;
+namespace BSP\UserDomain\Tests\ValueObject;
 
 use BSP\Types\Identity;
-use BSP\ValueObject\TokenId;
+use BSP\UserDomain\ValueObject\TokenId;
 use PHPUnit\Framework\TestCase;
 
 final class TokenIdTest extends TestCase

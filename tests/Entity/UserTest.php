@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Entity;
+namespace BSP\UserDomain\Tests\Entity;
 
-use BSP\Entity\User;
-use BSP\Factory\UserFactory;
-use BSP\ValueObject\Email;
-use BSP\ValueObject\EncodedPassword;
-use BSP\ValueObject\UserId;
+use BSP\UserDomain\Entity\User;
+use BSP\UserDomain\Factory\UserFactory;
+use BSP\UserDomain\ValueObject\Email;
+use BSP\UserDomain\ValueObject\EncodedPassword;
+use BSP\UserDomain\ValueObject\UserId;
 use PHPUnit\Framework\TestCase;
 
 final class UserTest extends TestCase

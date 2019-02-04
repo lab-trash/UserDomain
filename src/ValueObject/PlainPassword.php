@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\ValueObject;
+namespace BSP\UserDomain\ValueObject;
 
 use BSP\Types\Contracts\IString;
 

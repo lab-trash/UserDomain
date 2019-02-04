@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Port;
+namespace BSP\UserDomain\Port;
 
-use BSP\Entity\User;
+use BSP\UserDomain\Entity\User;
 
 interface IWriteUser
 {

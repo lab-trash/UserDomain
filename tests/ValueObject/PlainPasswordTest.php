@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\ValueObject;
+namespace BSP\UserDomain\Tests\ValueObject;
 
 use BSP\Types\String\BasicString;
-use BSP\ValueObject\PlainPassword;
+use BSP\UserDomain\ValueObject\PlainPassword;
 use PHPUnit\Framework\TestCase;
 
 final class PlainPasswordTest extends TestCase

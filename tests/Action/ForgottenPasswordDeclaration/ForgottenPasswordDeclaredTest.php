@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Action\ForgottenPasswordDeclaration;
+namespace BSP\UserDomain\Tests\Action\ForgottenPasswordDeclaration;
 
-use BSP\Action\ForgottenPasswordDeclaration\ForgottenPasswordDeclared;
-use BSP\Entity\User;
-use BSP\Factory\TokenFactory;
-use BSP\Factory\UserFactory;
+use BSP\UserDomain\Action\ForgottenPasswordDeclaration\ForgottenPasswordDeclared;
+use BSP\UserDomain\Entity\User;
+use BSP\UserDomain\Factory\TokenFactory;
+use BSP\UserDomain\Factory\UserFactory;
 use PHPUnit\Framework\TestCase;
 
 final class ForgottenPasswordDeclaredTest extends TestCase

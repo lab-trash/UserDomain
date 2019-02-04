@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Factory;
+namespace BSP\UserDomain\Factory;
 
-use BSP\Service\PasswordEncoder;
+use BSP\UserDomain\Service\PasswordEncoder;
 use BSP\Types\Identity;
 use BSP\Types\String\BasicString;
-use BSP\ValueObject\Email;
-use BSP\ValueObject\EncodedPassword;
-use BSP\ValueObject\PlainPassword;
-use BSP\ValueObject\UserId;
+use BSP\UserDomain\ValueObject\Email;
+use BSP\UserDomain\ValueObject\EncodedPassword;
+use BSP\UserDomain\ValueObject\PlainPassword;
+use BSP\UserDomain\ValueObject\UserId;
 
 final class UserFactory
 {

@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Action\PasswordUpdate;
+namespace BSP\UserDomain\Tests\Action\PasswordUpdate;
 
-use BSP\Action\PasswordUpdate\UpdatePassword;
-use BSP\Action\PasswordUpdate\UpdatePasswordHandler;
-use BSP\Bus\UserEventBus;
-use BSP\Entity\Token;
-use BSP\Entity\User;
-use BSP\Factory\TokenFactory;
-use BSP\Factory\UserFactory;
-use BSP\Port\IDispatchEvent;
-use BSP\Port\IReadToken;
-use BSP\Port\IReadUser;
-use BSP\Port\IWriteUser;
+use BSP\UserDomain\Action\PasswordUpdate\UpdatePassword;
+use BSP\UserDomain\Action\PasswordUpdate\UpdatePasswordHandler;
+use BSP\UserDomain\Bus\UserEventBus;
+use BSP\UserDomain\Entity\Token;
+use BSP\UserDomain\Entity\User;
+use BSP\UserDomain\Factory\TokenFactory;
+use BSP\UserDomain\Factory\UserFactory;
+use BSP\UserDomain\Port\IDispatchEvent;
+use BSP\UserDomain\Port\IReadToken;
+use BSP\UserDomain\Port\IReadUser;
+use BSP\UserDomain\Port\IWriteUser;
 use BSP\Types\Identity;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;

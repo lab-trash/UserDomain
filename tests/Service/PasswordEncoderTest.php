@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Service;
+namespace BSP\UserDomain\Tests\Service;
 
-use BSP\Factory\UserFactory;
-use BSP\Service\PasswordEncoder;
+use BSP\UserDomain\Factory\UserFactory;
+use BSP\UserDomain\Service\PasswordEncoder;
 use PHPUnit\Framework\TestCase;
 
 final class PasswordEncoderTest extends TestCase

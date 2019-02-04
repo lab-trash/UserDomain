@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Action\PasswordUpdate;
+namespace BSP\UserDomain\Action\PasswordUpdate;
 
-use BSP\Entity\User;
+use BSP\UserDomain\Entity\User;
 use BSP\EventBus\Event;
 
 final class PasswordUpdated implements Event

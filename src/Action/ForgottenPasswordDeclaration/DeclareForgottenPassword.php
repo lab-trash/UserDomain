@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Action\ForgottenPasswordDeclaration;
+namespace BSP\UserDomain\Action\ForgottenPasswordDeclaration;
 
 use BSP\CommandBus\Command;
-use BSP\Factory\UserFactory;
-use BSP\ValueObject\Email;
+use BSP\UserDomain\Factory\UserFactory;
+use BSP\UserDomain\ValueObject\Email;
 
 final class DeclareForgottenPassword implements Command
 {

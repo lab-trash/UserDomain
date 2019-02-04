@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Action\Registration;
+namespace BSP\UserDomain\Action\Registration;
 
-use BSP\Bus\UserEventBus;
+use BSP\UserDomain\Bus\UserEventBus;
 use BSP\CommandBus\Command;
 use BSP\CommandBus\CommandHandler;
-use BSP\Entity\User;
-use BSP\Factory\UserFactory;
-use BSP\Port\IReadUser;
-use BSP\Port\IWriteUser;
-use BSP\Service\PasswordEncoder;
+use BSP\UserDomain\Entity\User;
+use BSP\UserDomain\Factory\UserFactory;
+use BSP\UserDomain\Port\IReadUser;
+use BSP\UserDomain\Port\IWriteUser;
+use BSP\UserDomain\Service\PasswordEncoder;
 
 final class RegisterUserHandler implements CommandHandler
 {

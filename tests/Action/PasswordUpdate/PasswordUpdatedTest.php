@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Action\PasswordUpdate;
+namespace BSP\UserDomain\Tests\Action\PasswordUpdate;
 
-use BSP\Action\PasswordUpdate\PasswordUpdated;
-use BSP\Entity\User;
-use BSP\Factory\UserFactory;
+use BSP\UserDomain\Action\PasswordUpdate\PasswordUpdated;
+use BSP\UserDomain\Entity\User;
+use BSP\UserDomain\Factory\UserFactory;
 use PHPUnit\Framework\TestCase;
 
 final class PasswordUpdatedTest extends TestCase

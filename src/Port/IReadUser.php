@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Port;
+namespace BSP\UserDomain\Port;
 
-use BSP\Entity\User;
-use BSP\ValueObject\Email;
-use BSP\ValueObject\UserId;
+use BSP\UserDomain\Entity\User;
+use BSP\UserDomain\ValueObject\Email;
+use BSP\UserDomain\ValueObject\UserId;
 
 interface IReadUser
 {

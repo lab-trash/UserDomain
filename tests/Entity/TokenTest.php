@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Entity;
+namespace BSP\UserDomain\Tests\Entity;
 
-use BSP\Entity\Token;
-use BSP\Factory\TokenFactory;
-use BSP\Factory\UserFactory;
+use BSP\UserDomain\Entity\Token;
+use BSP\UserDomain\Factory\TokenFactory;
+use BSP\UserDomain\Factory\UserFactory;
 use BSP\Types\Identity;
-use BSP\ValueObject\TokenId;
-use BSP\ValueObject\TokenValue;
+use BSP\UserDomain\ValueObject\TokenId;
+use BSP\UserDomain\ValueObject\TokenValue;
 use PHPUnit\Framework\TestCase;
 
 final class TokenTest extends TestCase

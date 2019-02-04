@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Action\ForgottenPasswordDeclaration;
+namespace BSP\UserDomain\Action\ForgottenPasswordDeclaration;
 
-use BSP\Bus\UserEventBus;
+use BSP\UserDomain\Bus\UserEventBus;
 use BSP\CommandBus\Command;
 use BSP\CommandBus\CommandHandler;
-use BSP\Factory\TokenFactory;
-use BSP\Port\IReadUser;
-use BSP\Port\IWriteToken;
+use BSP\UserDomain\Factory\TokenFactory;
+use BSP\UserDomain\Port\IReadUser;
+use BSP\UserDomain\Port\IWriteToken;
 
 final class DeclareForgottenPasswordHandler implements CommandHandler
 {

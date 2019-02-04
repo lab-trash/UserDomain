@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Action\ForgottenPasswordDeclaration;
+namespace BSP\UserDomain\Action\ForgottenPasswordDeclaration;
 
-use BSP\Entity\Token;
-use BSP\Entity\User;
+use BSP\UserDomain\Entity\Token;
+use BSP\UserDomain\Entity\User;
 use BSP\EventBus\Event;
 
 final class ForgottenPasswordDeclared implements Event

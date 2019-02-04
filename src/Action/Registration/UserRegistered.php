@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Action\Registration;
+namespace BSP\UserDomain\Action\Registration;
 
-use BSP\Entity\User;
+use BSP\UserDomain\Entity\User;
 use BSP\EventBus\Event;
 
 final class UserRegistered implements Event

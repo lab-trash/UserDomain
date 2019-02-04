@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Factory;
+namespace BSP\UserDomain\Factory;
 
-use BSP\Entity\Token;
+use BSP\UserDomain\Entity\Token;
 use BSP\TokenGenerator\TokenGenerator;
 use BSP\Types\Identity;
 use BSP\Types\String\BasicString;
-use BSP\ValueObject\TokenId;
-use BSP\ValueObject\UserId;
-use BSP\ValueObject\TokenValue;
+use BSP\UserDomain\ValueObject\TokenId;
+use BSP\UserDomain\ValueObject\UserId;
+use BSP\UserDomain\ValueObject\TokenValue;
 
 final class TokenFactory
 {

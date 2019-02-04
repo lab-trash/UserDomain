@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Entity;
+namespace BSP\UserDomain\Entity;
 
-use BSP\ValueObject\TokenId;
-use BSP\ValueObject\TokenValue;
+use BSP\UserDomain\ValueObject\TokenId;
+use BSP\UserDomain\ValueObject\TokenValue;
 
 final class Token
 {

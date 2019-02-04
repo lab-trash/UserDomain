@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\ValueObject;
+namespace BSP\UserDomain\Tests\ValueObject;
 
 use BSP\Types\String\BasicString;
-use BSP\ValueObject\EncodedPassword;
+use BSP\UserDomain\ValueObject\EncodedPassword;
 use PHPUnit\Framework\TestCase;
 
 final class EncodedPasswordTest extends TestCase

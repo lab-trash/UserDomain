@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Tests\Action\Registration;
+namespace BSP\UserDomain\Tests\Action\Registration;
 
-use BSP\Action\Registration\UserRegistered;
-use BSP\Entity\User;
-use BSP\Factory\UserFactory;
+use BSP\UserDomain\Action\Registration\UserRegistered;
+use BSP\UserDomain\Entity\User;
+use BSP\UserDomain\Factory\UserFactory;
 use PHPUnit\Framework\TestCase;
 
 final class UserRegisteredTest extends TestCase

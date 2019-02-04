@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BSP\\": "src/"
+            "BSP\\UserDomain\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BSP\\Tests\\": "tests/"
+            "BSP\\UserDomain\\Tests\\": "tests/"
         }
     }
 }

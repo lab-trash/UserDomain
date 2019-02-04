@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Service;
+namespace BSP\UserDomain\Service;
 
 use BSP\Types\Contracts\IString;
 use BSP\Types\String\BasicString;
-use BSP\ValueObject\EncodedPassword;
+use BSP\UserDomain\ValueObject\EncodedPassword;
 
 final class PasswordEncoder
 {

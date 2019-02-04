@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace BSP\Action\PasswordUpdate;
+namespace BSP\UserDomain\Action\PasswordUpdate;
 
-use BSP\Bus\UserEventBus;
+use BSP\UserDomain\Bus\UserEventBus;
 use BSP\CommandBus\Command;
 use BSP\CommandBus\CommandHandler;
-use BSP\Entity\User;
-use BSP\Factory\UserFactory;
-use BSP\Port\IReadToken;
-use BSP\Port\IReadUser;
-use BSP\Port\IWriteUser;
+use BSP\UserDomain\Entity\User;
+use BSP\UserDomain\Factory\UserFactory;
+use BSP\UserDomain\Port\IReadToken;
+use BSP\UserDomain\Port\IReadUser;
+use BSP\UserDomain\Port\IWriteUser;
 
 final class UpdatePasswordHandler implements CommandHandler
 {
