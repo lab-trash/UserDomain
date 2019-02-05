@@ -11,7 +11,7 @@ pretty-fix:
 	./vendor/bin/pretty fix
 
 stan:
-	./vendor/bin/phpstan analyse -l 5 src
+	./vendor/bin/phpstan analyse -l 7 src
 
 test:
 	./vendor/bin/phpunit
