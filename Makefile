@@ -19,7 +19,9 @@ test:
 test-CI:
 	./vendor/bin/phpunit --coverage-clover=coverage.clover
 
+CI: stan test-CI
+
 release:
 	git add CHANGELOG.md && git commit -m "release(v$(VERSION))" && git tag v$(VERSION) && git push && git push --tags
 
-.PHONY: dev-from-scratch composer pretty pretty-fix stan test test-CI release
+.PHONY: dev-from-scratch composer pretty pretty-fix stan test test-CI CI release

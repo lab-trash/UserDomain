@@ -41,9 +41,12 @@ final class UserFactory
         return new PlainPassword($password);
     }
 
-    public static function encodedPassword(PlainPassword $password): EncodedPassword
+    /**
+     * @throws \BSP\UserDomain\Exception\InternalException
+     */
+    public static function encodedPassword(PlainPassword $plainPassword): EncodedPassword
     {
-        return PasswordEncoder::hash($password);
+        return PasswordEncoder::hash($plainPassword);
     }
 
     public static function encodedPasswordFromHash(string $hash): EncodedPassword
